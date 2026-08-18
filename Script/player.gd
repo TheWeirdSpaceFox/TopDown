@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var swing_sword: AudioStreamPlayer2D = $SwingSword
 @onready var hitbox: Area2D = $Hitbox
+@onready var collision_shape_2d: CollisionShape2D = $Hitbox/CollisionShape2D
 
 var SPEED = 300.0
 var last_direction: Vector2 = Vector2.RIGHT
@@ -38,6 +39,7 @@ func process_movement() -> void:
 	if direction != Vector2.ZERO:
 		velocity = direction * SPEED
 		last_direction = direction
+		update_hitbox_offset()
 	else:
 		velocity = Vector2.ZERO
 			
@@ -85,5 +87,17 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 #------------------------------------------------------------------------------
 
 func update_hitbox_offset() -> void:
-	var x := hitbox_offset.x
-	var y := hitbox_offset.y
+	
+	match last_direction:
+		Vector2.LEFT: 
+			hitbox.position = Vector2(-54,-1.5)
+			collision_shape_2d.position = Vector2 (-32, 10)
+		Vector2.RIGHT:
+			hitbox.position = Vector2(-54,-1.5)
+			collision_shape_2d.position = Vector2 (140, 10)
+		Vector2.UP: 
+			hitbox.position = Vector2(57, -99)
+			collision_shape_2d.position = Vector2 (-49.5, 33.5)
+		Vector2.DOWN:
+			hitbox.position = Vector2(57, -99)
+			collision_shape_2d.position = Vector2 (-70, 160)

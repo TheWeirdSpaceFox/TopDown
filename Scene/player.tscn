@@ -1071,7 +1071,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6jsd"]
-size = Vector2(56.3333, 24.3333)
+size = Vector2(48.3333, 47.6666)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ivevv")
@@ -1079,18 +1079,18 @@ script = ExtResource("1_ivevv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_rons2")
-animation = &"attack_right"
+animation = &"attack_down"
 frame = 2
 
 [node name="SwingSword" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_r6jsd")
 
 [node name="Hitbox" type="Area2D" parent="."]
-position = Vector2(140, 9)
+position = Vector2(37, 27)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(-52.5, -1.5)
+position = Vector2(-49.5, 33.5)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_r6jsd")
 
