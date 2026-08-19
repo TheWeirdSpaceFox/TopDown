@@ -1,3 +1,7 @@
+res://Scene/slime.tscn
 res://Scene/main.tscn
 res://Scene/base_level.tscn
 res://Scene/player.tscn
+res://Water.tscn
+res://Script/slime.gd
+res://Script/player.gd

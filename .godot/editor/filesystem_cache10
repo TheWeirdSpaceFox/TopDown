@@ -1,21 +1,27 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1787088677
+::res://::1787167293
 icon.svg::CompressedTexture2D/CompressedTexture2D::1835242157950449465::1777668040::1777668048::1::::<><><>0<>0<>f8a0c1387cf01c92878db89159d42e1c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1787076977::0::1::::<><><>0<>0<><>::
-::res://Assets/::1787080231
-::res://Assets/Audio/::1787080231
-530444__mellau__whoosh-short-4.wav::AudioStreamWAV/AudioStreamWAV::8970700448645457723::1787075668::1787075669::1::::<><><>0<>0<>5210c0525767ce8681e776399b5e6e68<>res://.godot/imported/530444__mellau__whoosh-short-4.wav-ad8c898aa097d45c06f40ba0cc0f6cab.sample::
+Water.tscn::PackedScene/PackedScene::4532595932898101066::1787166497::0::1::::<><><>0<>0<><>::uid://dqra4g1ncfib1::::res://Assets/Ground/Water-Sheet.png
+::res://Assets/::1787110976
+::res://Assets/Audio/::1787167293
+Attack.wav::AudioStreamWAV/AudioStreamWAV::8970700448645457723::1787075668::1787166389::1::::<><><>0<>0<>7e003dd588308f3c7dab50bf4705e1d3<>res://.godot/imported/Attack.wav-ba2ff377187929fc89b459a609e57470.sample::
+SlimeHit.wav::AudioStreamWAV::9220748706310215903::1787167279::1787167294::1::::<><><>0<>0<>6acbbedaae8e8a3486f51e3d3c70b0c0<>res://.godot/imported/SlimeHit.wav-ee7882bd486c51e151ba5df2342d16dd.sample::
 ::res://Assets/Char/::1787080231
 attack full sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::5185956767202366012::1787070219::1787075497::1::::<><><>0<>0<>d8beadd66bc9dcfb5a668ffab91518eb<>res://.godot/imported/attack full sprite sheet (transparent BG).png-d86cbd1340c922ed4be3f06b03d58408.ctex::
 idle full sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::5786072630298882926::1787070211::1787075497::1::::<><><>0<>0<>6d3bc9add20916214d99198e56e05bfc<>res://.godot/imported/idle full sprite sheet (transparent BG).png-7316434f9a7cc0cd8c329ebcf94e8363.ctex::
 run complete sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::2536130689945459841::1787070196::1787075497::1::::<><><>0<>0<>62315ba548033a90f226a2dd6fe7f8e4<>res://.godot/imported/run complete sprite sheet (transparent BG).png-bf50b1ea08255a1819547ee20e221bb8.ctex::
 walk complete sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::675244178386299162::1787070185::1787075497::1::::<><><>0<>0<>428acc558f5ab0266a2f48eee36bfabc<>res://.godot/imported/walk complete sprite sheet (transparent BG).png-e4512e3244d37d34d5caffa4232e3c49.ctex::
-::res://Assets/Ground/::1787080231
+::res://Assets/Enemys/::1787112582
+Slime-Sheet.png::CompressedTexture2D/CompressedTexture2D::5625923316212491739::1787112582::1787112582::1::::<><><>0<>0<>7e7b4668c2d1e9be5df7aafb62c947a6<>res://.godot/imported/Slime-Sheet.png-a33240478b2571233c0d97e224b920aa.ctex::
+::res://Assets/Ground/::1787112595
 TopDown Tiles.png::CompressedTexture2D/CompressedTexture2D::1184320812942751622::1777668257::1787075497::1::::<><><>0<>0<>d289b8049038f400e4d317c92a1232ea<>res://.godot/imported/TopDown Tiles.png-f56e0f3b656822c3f7eb0862637682bc.ctex::
-Water-Sheet.png::CompressedTexture2D/CompressedTexture2D::8317430115028634180::1777668291::1787075497::1::::<><><>0<>0<>081baadc1304cd9f0e97851128038215<>res://.godot/imported/Water-Sheet.png-ca2456b21cfbf8bedf38321a26239836.ctex::
-::res://Scene/::1787088081
-base_level.tscn::PackedScene::545394152763809296::1787088081::0::1::::<><><>0<>0<><>::uid://q4xuc6e28ogk::::res://Assets/Ground/TopDown Tiles.png
-main.tscn::PackedScene::1222940582718054943::1787087961::0::1::::<><><>0<>0<><>::uid://b4udkxutrcu65::::res://Scene/player.tscn
-player.tscn::PackedScene::4463385953013819276::1787087939::0::1::::<><><>0<>0<><>::uid://cf5d7kry1o11q::::res://Assets/Char/attack full sprite sheet (transparent BG).png<>uid://c3m3qv7xl1d1w::::res://Script/player.gd<>uid://coo21hec7wbsw::::res://Assets/Char/idle full sprite sheet (transparent BG).png<>uid://bcerx4owom61r::::res://Assets/Char/run complete sprite sheet (transparent BG).png<>uid://jvdf47frdrti::::res://Assets/Char/walk complete sprite sheet (transparent BG).png<>uid://d02qejmu4o2ap::::res://Assets/Audio/530444__mellau__whoosh-short-4.wav
-::res://Script/::1787087914
-player.gd::GDScript::6764631324284600566::1787087914::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Water-Sheet.png::CompressedTexture2D/CompressedTexture2D::8317430115028634180::1787112595::1787075497::1::::<><><>0<>0<>081baadc1304cd9f0e97851128038215<>res://.godot/imported/Water-Sheet.png-ca2456b21cfbf8bedf38321a26239836.ctex::
+::res://Scene/::1787166497
+base_level.tscn::PackedScene/PackedScene::545394152763809296::1787166497::0::1::::<><><>0<>0<><>::uid://q4xuc6e28ogk::::res://Assets/Ground/TopDown Tiles.png
+main.tscn::PackedScene/PackedScene::1222940582718054943::1787166497::0::1::::<><><>0<>0<><>::uid://b4udkxutrcu65::::res://Scene/player.tscn<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn
+player.tscn::PackedScene/PackedScene::4463385953013819276::1787166497::0::1::::<><><>0<>0<><>::uid://cf5d7kry1o11q::::res://Assets/Char/attack full sprite sheet (transparent BG).png<>uid://c3m3qv7xl1d1w::::res://Script/player.gd<>uid://coo21hec7wbsw::::res://Assets/Char/idle full sprite sheet (transparent BG).png<>uid://bcerx4owom61r::::res://Assets/Char/run complete sprite sheet (transparent BG).png<>uid://jvdf47frdrti::::res://Assets/Char/walk complete sprite sheet (transparent BG).png<>uid://d02qejmu4o2ap::::res://Assets/Audio/Attack.wav
+slime.tscn::PackedScene/PackedScene::6467996899707392376::1787166497::0::1::::<><><>0<>0<><>::uid://cmfieuen8wfg2::::res://Assets/Enemys/Slime-Sheet.png<>uid://bv5ydts1po4n3::::res://Script/slime.gd
+::res://Script/::1787166279
+player.gd::GDScript/GDScript::6764631324284600566::1787166279::0::1::::<>CharacterBody2D<><>0<>0<><>::
+slime.gd::GDScript/GDScript::3923781324873766762::1787166202::0::1::::<>CharacterBody2D<><>0<>0<><>::

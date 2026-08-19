@@ -9,12 +9,15 @@ var SPEED = 300.0
 var last_direction: Vector2 = Vector2.RIGHT
 var is_attcking: bool = false
 var hitbox_offset: Vector2
+var strength: int = 20
 
 func _ready() -> void:
 	#Initialise hitbox offset
 	hitbox_offset = hitbox.position
 
 func _physics_process(_delta: float) -> void:
+	#Disable hitbox till attack
+	hitbox.monitoring = false
 	
 	if Input.is_action_just_pressed("attack") and not is_attcking:
 		attack()
@@ -73,6 +76,7 @@ func play_animation(prefix: String, dir: Vector2) -> void:
 
 func attack() -> void:
 	is_attcking = true
+	hitbox.monitoring = true
 	# add more sounds either randomize or order one after the other
 	swing_sword.play()
 	play_animation("attack", last_direction)
@@ -101,3 +105,10 @@ func update_hitbox_offset() -> void:
 		Vector2.DOWN:
 			hitbox.position = Vector2(57, -99)
 			collision_shape_2d.position = Vector2 (-70, 160)
+
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	#Needs to be changed later to accomidate multiple enemy types
+	#Maybe make list of enemy types to look through and pass into begins with
+	if is_attcking and body.name.begins_with("Slime"):
+		body.take_damage(strength, position)
