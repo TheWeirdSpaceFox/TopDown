@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var take_damage_sound: AudioStreamPlayer2D = $TakeDamage
+@onready var health_bar: Node2D = $HealthBar
+
 
 const SPEED = 150.0
 
@@ -26,6 +28,7 @@ func _attack(delta: float) -> void:
 	
 func take_damage(damage: int, attacker_position: Vector2) -> void:
 	health -= damage
+	health_bar.update_health(health)
 	if health <= 0:
 		_die(attacker_position)
 	else:
@@ -42,6 +45,7 @@ func take_damage(damage: int, attacker_position: Vector2) -> void:
 	
 func _die(position) -> void:
 	is_alive = false
+	health_bar.remove_die()
 	play_animation("death", -position)
 	
 	take_damage_sound.pitch_scale = 0.5

@@ -1,8 +1,9 @@
-[gd_scene load_steps=69 format=3 uid="uid://cyfe71lf1fsea"]
+[gd_scene load_steps=70 format=3 uid="uid://cyfe71lf1fsea"]
 
 [ext_resource type="Texture2D" uid="uid://cmfieuen8wfg2" path="res://Assets/Enemys/Slime-Sheet.png" id="1_bpba4"]
 [ext_resource type="Script" uid="uid://bv5ydts1po4n3" path="res://Script/slime.gd" id="1_ssh8c"]
 [ext_resource type="AudioStream" uid="uid://d4munb6yak3vv" path="res://Assets/Audio/SlimeHit.wav" id="3_vnxak"]
+[ext_resource type="PackedScene" uid="uid://bmy8vyalkiwgc" path="res://Scene/health_bar.tscn" id="4_bte5j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ssh8c"]
 atlas = ExtResource("1_bpba4")
@@ -537,6 +538,10 @@ shape = SubResource("CircleShape2D_bpba4")
 [node name="TakeDamage" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_vnxak")
 pitch_scale = 1.29
+
+[node name="HealthBar" parent="." instance=ExtResource("4_bte5j")]
+position = Vector2(-8, 16.5)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="body_entered" from="Sight" to="." method="_on_sight_body_entered"]
 [connection signal="body_exited" from="Sight" to="." method="_on_sight_body_exited"]

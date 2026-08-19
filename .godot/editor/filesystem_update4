@@ -1,7 +1,8 @@
-res://Scene/slime.tscn
 res://Scene/main.tscn
 res://Scene/base_level.tscn
 res://Scene/player.tscn
 res://Water.tscn
+res://Scene/slime.tscn
+res://Scene/health_bar.tscn
+res://Script/health_bar.gd
 res://Script/slime.gd
-res://Script/player.gd
