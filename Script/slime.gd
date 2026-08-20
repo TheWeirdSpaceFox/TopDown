@@ -3,13 +3,16 @@ extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var take_damage_sound: AudioStreamPlayer2D = $TakeDamage
 @onready var health_bar: Node2D = $HealthBar
+@onready var attack_timer: Timer = $AttackTimer
 
 
 const SPEED = 150.0
 
 var is_alive:bool = true
 var target = null
+var target_in_range: bool = false
 var health: int = 100
+var strength: int = 10
 const KNOCKBACK_FORCE: int = 200
 
 			
@@ -75,3 +78,19 @@ func _on_sight_body_exited(body: Node2D) -> void:
 	if body.name == "Player" and is_alive:
 		target = null
 		animated_sprite_2d.play("idle")
+
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		target_in_range = true
+		body.take_damage(strength)
+		attack_timer.start()
+
+func _on_hitbox_body_exited(body: Node2D) -> void:
+	if body.name == "Player":
+		target_in_range = false
+		attack_timer.stop()
+
+func _on_attack_timer_timeout() -> void:
+	if target and target_in_range:
+		target.take_damage(strength)

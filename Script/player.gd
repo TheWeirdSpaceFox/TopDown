@@ -1,35 +1,45 @@
 extends CharacterBody2D
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var swing_sword: AudioStreamPlayer2D = $SwingSword
-@onready var hitbox: Area2D = $Hitbox
-@onready var collision_shape_2d: CollisionShape2D = $Hitbox/CollisionShape2D
+signal died
 
 var SPEED = 300.0
 var last_direction: Vector2 = Vector2.RIGHT
 var is_attcking: bool = false
 var hitbox_offset: Vector2
+var alive: bool = true
+var max_health : int
+var health : int = 100 
 var strength: int = 20
 
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var swing_sword_sound: AudioStreamPlayer2D = $SwingSword
+@onready var hitbox: Area2D = $Hitbox
+@onready var collision_shape_2d: CollisionShape2D = $Hitbox/CollisionShape2D
+@onready var take_damage_sound: AudioStreamPlayer2D = $TakeDamage
+@onready var damage_cool_down: Timer = $DamageCoolDown
+
 func _ready() -> void:
+	#Load health from signleton
+	health = PlayerStats.health
+	max_health = PlayerStats.max_health
 	#Initialise hitbox offset
 	hitbox_offset = hitbox.position
 
 func _physics_process(_delta: float) -> void:
 	#Disable hitbox till attack
 	hitbox.monitoring = false
-	
-	if Input.is_action_just_pressed("attack") and not is_attcking:
-		attack()
-		
-	# Skip movement if attacking
-	if is_attcking:
-		velocity = Vector2.ZERO
-		return
-		
-	process_movement()
-	process_animation()
-	move_and_slide()
+	if alive:
+		if Input.is_action_just_pressed("attack") and not is_attcking:
+			attack()
+			
+		# Skip movement if attacking
+		if is_attcking:
+			velocity = Vector2.ZERO
+			return
+			
+		process_movement()
+		process_animation()
+		move_and_slide()
 
 #------------------------------------------------------------------------------
 # Animation And Movement
@@ -78,7 +88,7 @@ func attack() -> void:
 	is_attcking = true
 	hitbox.monitoring = true
 	# add more sounds either randomize or order one after the other
-	swing_sword.play()
+	swing_sword_sound.play()
 	play_animation("attack", last_direction)
 
 
@@ -112,3 +122,24 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 	#Maybe make list of enemy types to look through and pass into begins with
 	if is_attcking and body.name.begins_with("Slime"):
 		body.take_damage(strength, position)
+
+func take_damage(amount: int) -> void:
+	if alive:
+		if damage_cool_down.time_left > 0:
+			return
+		#this sound is to long but temp so meh
+		# take_damage_sound.play() Sound Later
+		health -= amount
+		PlayerStats.health = health
+		print(health)
+		if health <= 0:
+			die()
+		#Temp invincible
+		damage_cool_down.start()
+	
+func die() -> void:
+	alive = false
+	#Animate Later
+	animated_sprite_2d.play("attack_right")
+	await animated_sprite_2d.animation_finished
+	died.emit()
