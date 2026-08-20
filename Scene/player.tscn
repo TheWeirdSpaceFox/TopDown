@@ -1102,5 +1102,11 @@ position = Vector2(-49.5, 33.5)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_r6jsd")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 1
+limit_top = 1
+limit_right = 3391
+limit_bottom = 1923
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
