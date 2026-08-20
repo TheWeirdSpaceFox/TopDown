@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal health_change(new_health: int)
 signal died
 
 var SPEED = 300.0
@@ -17,6 +18,7 @@ var strength: int = 20
 @onready var collision_shape_2d: CollisionShape2D = $Hitbox/CollisionShape2D
 @onready var take_damage_sound: AudioStreamPlayer2D = $TakeDamage
 @onready var damage_cool_down: Timer = $DamageCoolDown
+
 
 func _ready() -> void:
 	#Load health from signleton
@@ -131,7 +133,7 @@ func take_damage(amount: int) -> void:
 		# take_damage_sound.play() Sound Later
 		health -= amount
 		PlayerStats.health = health
-		print(health)
+		emit_signal("health_change", health)
 		if health <= 0:
 			die()
 		#Temp invincible

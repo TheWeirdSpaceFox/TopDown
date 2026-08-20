@@ -1,9 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://djun87hejdbd8"]
+[gd_scene load_steps=5 format=3 uid="uid://djun87hejdbd8"]
 
 [ext_resource type="Script" uid="uid://6w1pnxlprcj6" path="res://Script/hud.gd" id="1_cevek"]
+[ext_resource type="Texture2D" uid="uid://1c6urhxky5a2" path="res://Assets/UI/Heart_Full.png" id="2_3quw2"]
+[ext_resource type="Texture2D" uid="uid://1ievbijmsv8g" path="res://Assets/UI/HealthBarPlayer.png" id="3_et0hg"]
+[ext_resource type="Texture2D" uid="uid://cqndaqpdsfhec" path="res://Assets/UI/HealthBarredPlayer.png" id="4_uh1qp"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_cevek")
+
+[node name="Hearts" type="HBoxContainer" parent="."]
+visible = false
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 220.11
+offset_bottom = 40.0
+
+[node name="Heart" type="TextureRect" parent="Hearts"]
+layout_mode = 2
+texture = ExtResource("2_3quw2")
+stretch_mode = 2
+
+[node name="Heart2" type="TextureRect" parent="Hearts"]
+layout_mode = 2
+texture = ExtResource("2_3quw2")
+stretch_mode = 2
+
+[node name="Heart3" type="TextureRect" parent="Hearts"]
+layout_mode = 2
+texture = ExtResource("2_3quw2")
+stretch_mode = 2
+
+[node name="Heart4" type="TextureRect" parent="Hearts"]
+layout_mode = 2
+texture = ExtResource("2_3quw2")
+stretch_mode = 2
+
+[node name="Heart5" type="TextureRect" parent="Hearts"]
+layout_mode = 2
+texture = ExtResource("2_3quw2")
+stretch_mode = 2
 
 [node name="FadeOverlay" type="ColorRect" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -13,3 +48,28 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="red" type="TextureProgressBar" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -626.0
+offset_top = -173.0
+offset_right = -621.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(5, 5)
+fill_mode = 3
+texture_progress = ExtResource("4_uh1qp")
+
+[node name="black" type="TextureRect" parent="."]
+offset_left = 14.0
+offset_top = 547.0
+offset_right = 19.0
+offset_bottom = 580.0
+scale = Vector2(5, 5)
+texture = ExtResource("3_et0hg")
+stretch_mode = 2
