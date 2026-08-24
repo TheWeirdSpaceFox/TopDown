@@ -1106,8 +1106,6 @@ shape = SubResource("RectangleShape2D_r6jsd")
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 1
 limit_top = 1
-limit_right = 3391
-limit_bottom = 1923
 
 [node name="TakeDamage" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_p6qlh")
