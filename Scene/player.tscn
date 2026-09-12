@@ -1083,7 +1083,7 @@ script = ExtResource("1_ivevv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_rons2")
-animation = &"idle_down"
+animation = &"attack_down"
 autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

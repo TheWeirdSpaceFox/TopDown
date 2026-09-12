@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd30ihkbsuhwv"]
+
+[ext_resource type="Texture2D" uid="uid://cx8yv0k3axst8" path="res://Assets/Ground/foliagefin.png" id="1_1i8wt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdc8n"]
+atlas = ExtResource("1_1i8wt")
+region = Rect2(0, 0, 160, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i8wt"]
+atlas = ExtResource("1_1i8wt")
+region = Rect2(0, 120, 160, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yydj0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdc8n")
+}],
+"loop": true,
+"name": &"Tree",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i8wt")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Tree" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yydj0")
+animation = &"new_animation"
+
+[node name="Marker2D" type="Marker2D" parent="."]

@@ -1,25 +1,27 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1789157029
+::res://::1789234151
 icon.svg::CompressedTexture2D/CompressedTexture2D::1835242157950449465::1777668040::1777668048::1::::<><><>0<>0<>f8a0c1387cf01c92878db89159d42e1c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1787076977::0::1::::<><><>0<>0<><>::
 Water.tscn::PackedScene/PackedScene::4532595932898101066::1787180014::0::1::::<><><>0<>0<><>::uid://dqra4g1ncfib1::::res://Assets/Ground/Water-Sheet.png
-::res://Assets/::1787173130
-::res://Assets/Audio/::1787243870
+::res://Assets/::1789233727
+::res://Assets/Audio/::1789233727
 Attack.wav::AudioStreamWAV/AudioStreamWAV::8970700448645457723::1787075668::1787166389::1::::<><><>0<>0<>7e003dd588308f3c7dab50bf4705e1d3<>res://.godot/imported/Attack.wav-ba2ff377187929fc89b459a609e57470.sample::
 player_damage.wav::AudioStreamWAV/AudioStreamWAV::6176119375326147107::1787243832::1787243870::1::::<><><>0<>0<>435cbd1c4bbf33daf82fd6aeffeb54f4<>res://.godot/imported/player_damage.wav-9cec72bfc69647bcbac0e651a28ee88a.sample::
 SlimeHit.wav::AudioStreamWAV/AudioStreamWAV::9220748706310215903::1787167279::1787167294::1::::<><><>0<>0<>6acbbedaae8e8a3486f51e3d3c70b0c0<>res://.godot/imported/SlimeHit.wav-ee7882bd486c51e151ba5df2342d16dd.sample::
-::res://Assets/Char/::1787080231
+::res://Assets/Char/::1789233727
 attack full sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::5185956767202366012::1787070219::1787075497::1::::<><><>0<>0<>d8beadd66bc9dcfb5a668ffab91518eb<>res://.godot/imported/attack full sprite sheet (transparent BG).png-d86cbd1340c922ed4be3f06b03d58408.ctex::
 idle full sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::5786072630298882926::1787070211::1787075497::1::::<><><>0<>0<>6d3bc9add20916214d99198e56e05bfc<>res://.godot/imported/idle full sprite sheet (transparent BG).png-7316434f9a7cc0cd8c329ebcf94e8363.ctex::
 run complete sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::2536130689945459841::1787070196::1787075497::1::::<><><>0<>0<>62315ba548033a90f226a2dd6fe7f8e4<>res://.godot/imported/run complete sprite sheet (transparent BG).png-bf50b1ea08255a1819547ee20e221bb8.ctex::
 walk complete sprite sheet (transparent BG).png::CompressedTexture2D/CompressedTexture2D::675244178386299162::1787070185::1787075497::1::::<><><>0<>0<>428acc558f5ab0266a2f48eee36bfabc<>res://.godot/imported/walk complete sprite sheet (transparent BG).png-e4512e3244d37d34d5caffa4232e3c49.ctex::
-::res://Assets/Enemys/::1787112582
+::res://Assets/Enemys/::1789233727
 Slime-Sheet.png::CompressedTexture2D/CompressedTexture2D::5625923316212491739::1787112582::1787112582::1::::<><><>0<>0<>7e7b4668c2d1e9be5df7aafb62c947a6<>res://.godot/imported/Slime-Sheet.png-a33240478b2571233c0d97e224b920aa.ctex::
-::res://Assets/Ground/::1789158534
-foliagefin.png::CompressedTexture2D/CompressedTexture2D::6456805276248232615::1789158534::1789158534::1::::<><><>0<>0<>a48a0a92462dc695ba9e2cfea972ad3c<>res://.godot/imported/foliagefin.png-0180bc3f75df5da8b6ce1a78d4482a3f.ctex::
+::res://Assets/Ground/::1789238116
+Drop-Rock.png::CompressedTexture2D::1953343270990519328::1789238116::1789238117::1::::<><><>0<>0<>4b1adf2d484930447b5eeef1712a5476<>res://.godot/imported/Drop-Rock.png-042020f277b2a77a743043e518b8c4d8.ctex::
+foliagefin.png::CompressedTexture2D/CompressedTexture2D::6456805276248232615::1789231094::1789231094::1::::<><><>0<>0<>a48a0a92462dc695ba9e2cfea972ad3c<>res://.godot/imported/foliagefin.png-0180bc3f75df5da8b6ce1a78d4482a3f.ctex::
 Grass-Lighter.png::CompressedTexture2D/CompressedTexture2D::5437625624275111281::1787340039::1787340039::1::::<><><>0<>0<>b4efb24ad748f6232c0734235f852f81<>res://.godot/imported/Grass-Lighter.png-7983b724fcfb3c2415f8bf7dd8641094.ctex::
 Grass-test.png::CompressedTexture2D/CompressedTexture2D::879467962983575880::1787239030::1787239030::1::::<><><>0<>0<>40b083c2a6639e9464b34040a5d8b232<>res://.godot/imported/Grass-test.png-1f64f3a1bb0de73cc933a253ef1ffd64.ctex::
 Houseexpfin.png::CompressedTexture2D/CompressedTexture2D::6659111378994431243::1788967114::1788967114::1::::<><><>0<>0<>99e44e07e94470981db9416edb694e5f<>res://.godot/imported/Houseexpfin.png-5ed6f926ad3a30ce5a7e71ff3521bce9.ctex::
+Items.png::CompressedTexture2D/CompressedTexture2D::4219436101312550654::1789238011::1789230314::1::::<><><>0<>0<>45c9e1450cf1b903eb44981932102d9a<>res://.godot/imported/Items.png-b15b9f2577dc7c7db7684d41a362e296.ctex::
 New-Grass-Path.png::CompressedTexture2D/CompressedTexture2D::4482516431051527070::1787516520::1787516520::1::::<><><>0<>0<>1a5d9a7a1e0682b2ebf1cc19bbbf9d04<>res://.godot/imported/New-Grass-Path.png-019b3f75bcdb509c1762fba2f3f4492f.ctex::
 TopDown Tiles-Sheet+path-Sheet.png::CompressedTexture2D/CompressedTexture2D::2910267585518737168::1787180171::1787180171::1::::<><><>0<>0<>3df92213008019ec71b7db8350e6b2d4<>res://.godot/imported/TopDown Tiles-Sheet+path-Sheet.png-4e8a38ccd1785eb2c6125645869dab73.ctex::
 TopDown Tiles-Sheet+path.png::CompressedTexture2D/CompressedTexture2D::1064604099806402087::1787179211::1787179211::1::::<><><>0<>0<>47f2e9e7512b93312bcb0d9b4ee426b8<>res://.godot/imported/TopDown Tiles-Sheet+path.png-d42c12feec103d266fe6e63ed3968b84.ctex::
@@ -27,7 +29,7 @@ TopDown Tiles.png::CompressedTexture2D/CompressedTexture2D::1184320812942751622:
 Water-newgrass-Sheet.png::CompressedTexture2D/CompressedTexture2D::5529143215362854888::1787268519::1787268519::1::::<><><>0<>0<>3982f5c1700521f172fb9ef408cdd534<>res://.godot/imported/Water-newgrass-Sheet.png-66d3f5184643ec9e4db346ea8de89717.ctex::
 Water-Sheet.png::CompressedTexture2D/CompressedTexture2D::8317430115028634180::1787341068::1787075497::1::::<><><>0<>0<>081baadc1304cd9f0e97851128038215<>res://.godot/imported/Water-Sheet.png-ca2456b21cfbf8bedf38321a26239836.ctex::
 waterBoarders-Sheet.png::CompressedTexture2D/CompressedTexture2D::1978564109122387687::1787185177::1787185178::1::::<><><>0<>0<>c5feef0135d2eb06d14e7b0409c3faa3<>res://.godot/imported/waterBoarders-Sheet.png-4830221991fa43e435aff8523d866b03.ctex::
-::res://Assets/UI/::1787252891
+::res://Assets/UI/::1789233727
 HealthBar.png::CompressedTexture2D/CompressedTexture2D::6522782990297923760::1787173405::1787173405::1::::<><><>0<>0<>2915371c4a7e776750beccd6bdd6c3b8<>res://.godot/imported/HealthBar.png-6d7447fa6cbb95b40a1c256e582a2834.ctex::
 HealthBarPlayer.png::CompressedTexture2D/CompressedTexture2D::1841705391571862060::1787252890::1787252891::1::::<><><>0<>0<>d49f5026f069ccaf0fae596f1bda6885<>res://.godot/imported/HealthBarPlayer.png-89876f47818d3255e1c6cd05ed5d4669.ctex::
 HealthBarred.png::CompressedTexture2D/CompressedTexture2D::7759815444087494264::1787173405::1787173405::1::::<><><>0<>0<>06255f7b0adde7a4936057c72f0e2625<>res://.godot/imported/HealthBarred.png-248e8d258fb4992851a9a2214ce00379.ctex::
@@ -35,20 +37,22 @@ HealthBarredPlayer.png::CompressedTexture2D/CompressedTexture2D::592288279108203
 Heart_Empty.png::CompressedTexture2D/CompressedTexture2D::4317400703662891616::1787252240::1787252240::1::::<><><>0<>0<>002aa6050f96bf231bfc050e0f4ca6aa<>res://.godot/imported/Heart_Empty.png-7b31bfba205cf821fd4a6436164f18c8.ctex::
 Heart_Full.png::CompressedTexture2D/CompressedTexture2D::1830957537520759315::1787252240::1787252240::1::::<><><>0<>0<>ee4dd4a51547a299a08615634f59a70f<>res://.godot/imported/Heart_Full.png-3c892cbde950ccb7f31c04d67fcefe1d.ctex::
 Heart_Half.png::CompressedTexture2D/CompressedTexture2D::148227700988342230::1787252240::1787252240::1::::<><><>0<>0<>33d2b383c08e12d24a4397ba46277f35<>res://.godot/imported/Heart_Half.png-c5f75b8baea881d1b203c744aa26fb05.ctex::
-::res://Scene/::1789158294
-health_bar.tscn::PackedScene::3280274296954116966::1789158293::0::1::::<><><>0<>0<><>::uid://cy6xju8rty4si::::res://Assets/UI/HealthBar.png<>uid://c7h0ab1a56ep::::res://Script/health_bar.gd<>uid://dis6a52dgn65y::::res://Assets/UI/HealthBarred.png
-hud.tscn::PackedScene::7833099142762339187::1789158294::0::1::::<><><>0<>0<><>::uid://6w1pnxlprcj6::::res://Script/hud.gd<>uid://1c6urhxky5a2::::res://Assets/UI/Heart_Full.png<>uid://1ievbijmsv8g::::res://Assets/UI/HealthBarPlayer.png<>uid://cqndaqpdsfhec::::res://Assets/UI/HealthBarredPlayer.png
-main.tscn::PackedScene::1222940582718054943::1789158293::0::1::::<><><>0<>0<><>::uid://dr7xoja8iacdx::::res://Script/main.gd<>uid://djun87hejdbd8::::res://Scene/hud.tscn<>uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn
-player.tscn::PackedScene::4463385953013819276::1789158293::0::1::::<><><>0<>0<><>::uid://cf5d7kry1o11q::::res://Assets/Char/attack full sprite sheet (transparent BG).png<>uid://c3m3qv7xl1d1w::::res://Script/player.gd<>uid://coo21hec7wbsw::::res://Assets/Char/idle full sprite sheet (transparent BG).png<>uid://bcerx4owom61r::::res://Assets/Char/run complete sprite sheet (transparent BG).png<>uid://jvdf47frdrti::::res://Assets/Char/walk complete sprite sheet (transparent BG).png<>uid://d02qejmu4o2ap::::res://Assets/Audio/Attack.wav<>uid://ct801wbjd6mop::::res://Assets/Audio/player_damage.wav
-slime.tscn::PackedScene::6467996899707392376::1789158293::0::1::::<><><>0<>0<><>::uid://cmfieuen8wfg2::::res://Assets/Enemys/Slime-Sheet.png<>uid://bv5ydts1po4n3::::res://Script/slime.gd<>uid://d4munb6yak3vv::::res://Assets/Audio/SlimeHit.wav<>uid://bmy8vyalkiwgc::::res://Scene/health_bar.tscn
-::res://Scene/Levels/::1789158294
-base_level.tscn::PackedScene::545394152763809296::1789158294::0::1::::<><><>0<>0<><>::uid://cx8yv0k3axst8::::res://Assets/Ground/foliagefin.png<>uid://bhp0xgk5nynee::::res://Assets/Ground/TopDown Tiles-Sheet+path-Sheet.png<>uid://dqra4g1ncfib1::::res://Assets/Ground/Water-Sheet.png<>uid://b4udkxutrcu65::::res://Scene/player.tscn<>uid://c14yud1pw7f60::::res://Assets/Ground/Houseexpfin.png<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn<>uid://b44mnjwxjw7hq::::res://Assets/Ground/New-Grass-Path.png
-level_1.tscn::PackedScene::7327666936966204463::1789158294::0::1::::<><><>0<>0<><>::uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn<>uid://cx8yv0k3axst8::::res://Assets/Ground/foliagefin.png<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn<>uid://bhp0xgk5nynee::::res://Assets/Ground/TopDown Tiles-Sheet+path-Sheet.png<>uid://c14yud1pw7f60::::res://Assets/Ground/Houseexpfin.png<>uid://b44mnjwxjw7hq::::res://Assets/Ground/New-Grass-Path.png
-level_2.tscn::PackedScene::1282193426352366669::1789158294::0::1::::<><><>0<>0<><>::uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn
-::res://Script/::1787423797
+::res://Scene/::1789237850
+health_bar.tscn::PackedScene::3280274296954116966::1789237767::0::1::::<><><>0<>0<><>::uid://cy6xju8rty4si::::res://Assets/UI/HealthBar.png<>uid://c7h0ab1a56ep::::res://Script/health_bar.gd<>uid://dis6a52dgn65y::::res://Assets/UI/HealthBarred.png
+hud.tscn::PackedScene::7833099142762339187::1789237767::0::1::::<><><>0<>0<><>::uid://6w1pnxlprcj6::::res://Script/hud.gd<>uid://1c6urhxky5a2::::res://Assets/UI/Heart_Full.png<>uid://1ievbijmsv8g::::res://Assets/UI/HealthBarPlayer.png<>uid://cqndaqpdsfhec::::res://Assets/UI/HealthBarredPlayer.png
+main.tscn::PackedScene::1222940582718054943::1789237767::0::1::::<><><>0<>0<><>::uid://dr7xoja8iacdx::::res://Script/main.gd<>uid://djun87hejdbd8::::res://Scene/hud.tscn<>uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn
+player.tscn::PackedScene::4463385953013819276::1789237767::0::1::::<><><>0<>0<><>::uid://cf5d7kry1o11q::::res://Assets/Char/attack full sprite sheet (transparent BG).png<>uid://c3m3qv7xl1d1w::::res://Script/player.gd<>uid://coo21hec7wbsw::::res://Assets/Char/idle full sprite sheet (transparent BG).png<>uid://bcerx4owom61r::::res://Assets/Char/run complete sprite sheet (transparent BG).png<>uid://jvdf47frdrti::::res://Assets/Char/walk complete sprite sheet (transparent BG).png<>uid://d02qejmu4o2ap::::res://Assets/Audio/Attack.wav<>uid://ct801wbjd6mop::::res://Assets/Audio/player_damage.wav
+rock_dark.gd::GDScript::5866788048817107630::1789237069::0::1::::<>StaticBody2D<><>0<>0<><>::
+rock_dark.tscn::PackedScene::871488141868376290::1789237850::0::1::::<><><>0<>0<><>::uid://cx8yv0k3axst8::::res://Assets/Ground/foliagefin.png<>uid://cpt6e3f1ra855::::res://Scene/rock_dark.gd
+slime.tscn::PackedScene::6467996899707392376::1789237767::0::1::::<><><>0<>0<><>::uid://cmfieuen8wfg2::::res://Assets/Enemys/Slime-Sheet.png<>uid://bv5ydts1po4n3::::res://Script/slime.gd<>uid://d4munb6yak3vv::::res://Assets/Audio/SlimeHit.wav<>uid://bmy8vyalkiwgc::::res://Scene/health_bar.tscn
+::res://Scene/Levels/::1789237768
+base_level.tscn::PackedScene::545394152763809296::1789237768::0::1::::<><><>0<>0<><>::uid://cx8yv0k3axst8::::res://Assets/Ground/foliagefin.png<>uid://bhp0xgk5nynee::::res://Assets/Ground/TopDown Tiles-Sheet+path-Sheet.png<>uid://dqra4g1ncfib1::::res://Assets/Ground/Water-Sheet.png<>uid://b4udkxutrcu65::::res://Scene/player.tscn<>uid://c14yud1pw7f60::::res://Assets/Ground/Houseexpfin.png<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn<>uid://b44mnjwxjw7hq::::res://Assets/Ground/New-Grass-Path.png
+level_1.tscn::PackedScene::7327666936966204463::1789237767::0::1::::<><><>0<>0<><>::uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn<>uid://cx8yv0k3axst8::::res://Assets/Ground/foliagefin.png<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn<>uid://bhp0xgk5nynee::::res://Assets/Ground/TopDown Tiles-Sheet+path-Sheet.png<>uid://c14yud1pw7f60::::res://Assets/Ground/Houseexpfin.png<>uid://mofjuoj7f2mw::::res://Scene/rock_dark.tscn<>uid://b44mnjwxjw7hq::::res://Assets/Ground/New-Grass-Path.png
+level_2.tscn::PackedScene::1282193426352366669::1789237767::0::1::::<><><>0<>0<><>::uid://h1gtdxmec51u::::res://Scene/Levels/base_level.tscn<>uid://cyfe71lf1fsea::::res://Scene/slime.tscn
+::res://Script/::1789237850
 health_bar.gd::GDScript/GDScript::206907441930305795::1787175645::0::1::::<>Node2D<><>0<>0<><>::
 hud.gd::GDScript/GDScript::2222876610943379441::1787260136::0::1::::<>CanvasLayer<><>0<>0<><>::
 main.gd::GDScript/GDScript::8419954447224277157::1787423797::0::1::::<>Node2D<><>0<>0<><>::
-player.gd::GDScript/GDScript::6764631324284600566::1787258015::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::6764631324284600566::1789237850::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player_stats.gd::GDScript/GDScript::2925105122676943383::1787246865::0::1::::<>Node<><>0<>0<><>::
 slime.gd::GDScript/GDScript::3923781324873766762::1787243413::0::1::::<>CharacterBody2D<><>0<>0<><>::

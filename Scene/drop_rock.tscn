@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://carfkt1i8qphi"]
+
+[ext_resource type="Texture2D" uid="uid://23hjpx04b0s7" path="res://Assets/Ground/Drop-Rock.png" id="1_8y661"]
+[ext_resource type="Script" uid="uid://svhpuhdm8y7t" path="res://Scene/drop_rock.gd" id="1_fhwot"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fhwot"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kmhlu"]
+radius = 40.0
+
+[node name="drop_rock" type="Area2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_fhwot")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8y661")
+
+[node name="PickupArea" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fhwot")
+
+[node name="MagnetArea" type="Area2D" parent="."]
+
+[node name="MagnetShape" type="CollisionShape2D" parent="MagnetArea"]
+shape = SubResource("CircleShape2D_kmhlu")
+
+[connection signal="body_entered" from="MagnetArea" to="." method="_on_magnet_area_body_entered"]

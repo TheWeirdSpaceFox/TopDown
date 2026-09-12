@@ -21,6 +21,7 @@ var strength: int = 20
 
 
 func _ready() -> void:
+	hitbox.monitoring = false
 	#Load health from signleton
 	health = PlayerStats.health
 	max_health = PlayerStats.max_health
@@ -28,8 +29,6 @@ func _ready() -> void:
 	hitbox_offset = hitbox.position
 
 func _physics_process(_delta: float) -> void:
-	#Disable hitbox till attack
-	hitbox.monitoring = false
 	if alive:
 		if Input.is_action_just_pressed("attack") and not is_attcking:
 			attack()
@@ -92,11 +91,19 @@ func attack() -> void:
 	# add more sounds either randomize or order one after the other
 	swing_sword_sound.play()
 	play_animation("attack", last_direction)
+	
+	# Catch objects that were ALREADY inside the hitbox when the swing started
+	await get_tree().process_frame
+	if is_attcking:
+		for body in hitbox.get_overlapping_bodies():
+			if body.has_method("take_damage") and body != self:
+				body.take_damage()
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if is_attcking:
 		is_attcking = false
+		hitbox.monitoring = false
 
 #------------------------------------------------------------------------------
 # Hitbox
@@ -120,10 +127,20 @@ func update_hitbox_offset() -> void:
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
+	if not is_attcking:
+		return
+	
+	if body.has_method("take_damage"):
+		# If it's a Slime (or object expecting knockback/position), pass strength and position
+		if body.name.begins_with("Slime"):
+			body.take_damage(strength, position)
+		# For rocks or other breakables that take a single/default damage parameter
+		else:
+			body.take_damage()
 	#Needs to be changed later to accomidate multiple enemy types
 	#Maybe make list of enemy types to look through and pass into begins with
-	if is_attcking and body.name.begins_with("Slime"):
-		body.take_damage(strength, position)
+	#if is_attcking and body.name.begins_with("Slime"):
+		#body.take_damage(strength, position)
 
 func take_damage(amount: int) -> void:
 	if alive:

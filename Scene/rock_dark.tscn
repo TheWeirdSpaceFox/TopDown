@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://mofjuoj7f2mw"]
+
+[ext_resource type="Texture2D" uid="uid://cx8yv0k3axst8" path="res://Assets/Ground/foliagefin.png" id="1_5dawr"]
+[ext_resource type="Script" uid="uid://cpt6e3f1ra855" path="res://Scene/rock_dark.gd" id="1_dyxsd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tex2c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyxsd"]
+atlas = ExtResource("1_5dawr")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vd0if"]
+atlas = ExtResource("1_5dawr")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iq3h2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyxsd")
+}],
+"loop": true,
+"name": &"breaking",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vd0if")
+}],
+"loop": true,
+"name": &"rock",
+"speed": 0.0
+}]
+
+[node name="rock_dark" type="StaticBody2D"]
+scale = Vector2(4, 4)
+collision_layer = 2
+script = ExtResource("1_dyxsd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_tex2c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iq3h2")
+animation = &"rock"
+
+[node name="Marker2D" type="Marker2D" parent="."]

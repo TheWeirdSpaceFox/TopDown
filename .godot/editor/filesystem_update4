@@ -1,8 +1,14 @@
-res://Scene/Levels/base_level.tscn
-res://Scene/Levels/level_1.tscn
+res://Scene/slime.tscn
+res://Scene/rock_dark.gd
 res://Scene/main.tscn
 res://Scene/player.tscn
-res://Scene/slime.tscn
 res://Scene/health_bar.tscn
+res://Scene/Levels/level_1.tscn
 res://Scene/Levels/level_2.tscn
 res://Scene/hud.tscn
+res://Scene/Levels/base_level.tscn
+res://Scene/rock_dark.tscn
+res://Script/player.gd
+res://Scene/drop_rock.tscn
+res://Scene/drop_rock.gd
+res://Scene/tree.tscn
