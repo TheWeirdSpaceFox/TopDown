@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bffclp8kn80nv"
-path="res://.godot/imported/Foliage.png-16440303b709c9eff211f4d0998ea33f.ctex"
+uid="uid://cx8yv0k3axst8"
+path="res://.godot/imported/foliagefin.png-0180bc3f75df5da8b6ce1a78d4482a3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ground/Foliage.png"
-dest_files=["res://.godot/imported/Foliage.png-16440303b709c9eff211f4d0998ea33f.ctex"]
+source_file="res://Assets/Ground/foliagefin.png"
+dest_files=["res://.godot/imported/foliagefin.png-0180bc3f75df5da8b6ce1a78d4482a3f.ctex"]
 
 [params]
 
